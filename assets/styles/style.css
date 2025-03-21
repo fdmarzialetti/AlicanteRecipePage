@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial; 
+}
+
+:root{
+    --greenAlicante:#026937;
+    --lightgreenAlicante:#C2D500;
+    --sparkgreenAlicante:#49A112;
+    --deepgreen:#206D55;
+}
+
+/*HEADER*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em;
+    width: 90%;
+    background-color: white;
+    gap:0.5em;
+}
+
+.logo_container img{
+    width: 9em;
+    height: 5em;
+}
+nav ul{
+    display: flex;
+    gap: 2em;
+    list-style: none;
+    font-size: large;
+    font-weight: lighter;
+}
+
+nav ul i{
+    margin-right: 0.5em;
+    color: var(--deepgreen) !important;
+}
+
+a{
+    text-decoration: none;
+    color: var(--deepgreen);
+}
+
+a:hover{
+    color: gray;
+    transition: 200ms;
+}
+
+.search input{
+    border: 0.1em solid var(--deepgreen);
+    height: 3.5em;
+    width: 18em;
+    padding-left: 1em;
+    border-radius: 2em 2em 2em 0em;
+}
+
+.search input::placeholder{
+    color: var(--deepgreen);
+    font-weight: lighter;
+}
+
+.search input:focus{
+    border-color: var(--deepgreen);
+}
+
+.search button{
+    position: relative;
+    right: 3em;
+    border: none;
+    background-color: var(--lightgreenAlicante);
+    border-radius: 100%;
+    width: 2em;
+    height: 2em;
+    color: white;
+}
+
+.search button:hover{
+    background-color: var(--greenAlicante);
+    transition: 200ms;
+}
+
+/*BANNER*/
+
+.banner{
+    background-color: var(--greenAlicante);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5em;
+    padding: 2.5em;
+}
+
+.banner p{
+    width: 80%;
+}
+
+.banner h2{
+    letter-spacing: 15px;
+    font-weight: lighter;
+}
+
+/*MAIN*/
+
+main{
+    background-image: url("/assets/images/scratched-beige-wooden-textured.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*DESCRIPTION SECTION*/
+
+.recipe_description_section{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 3em 0;
+}
+.recipe_description_section img{
+    width: 750px;
+}
+
+.recipe_descriptions_container{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+    height: 416px;
+}
+
+.description{
+    width: 160px;
+    box-shadow: rgba(0, 0, 0, 0.50) 1.95px 1.95px 2.6px;
+    padding: 1em;
+    background-color:rgb(253, 253, 247);
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    color: gray;
+    font-size: small;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.recipe_descriptions_container:nth-child(2) .description{
+    height: 180px;
+
+}
+
+.description hr{
+    height: 3px;
+    width: 25%;
+    background-color: var(--sparkgreenAlicante);
+}
+
+.description h2{
+    text-transform:uppercase;
+    font-size: small;
+    
+}
+
+.description h3{
+    color: var(--sparkgreenAlicante);
+}
+
+.description i{
+    font-size: large;
+}
+
+/*LIST SECTION*/
+
+.lists_section{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    padding: 2em 6em;
+}
+
+.list_tittle{
+    display: flex;
+    gap:0.5em;
+}
+
+.list_tittle i{
+    color: var(--greenAlicante);
+    font-size: 2.5em;
+}
+
+.list_tittle h2{
+    color: white;
+    background-color: var(--greenAlicante);
+    padding: 0.3em;
+    border-radius: 0 2em 2em 2em;
+    width: 9em;
+    text-align: center;
+}
+
+.lists_left{
+    width: 65%;
+    color: gray;
+}
+
+.lists_right{
+    width:35%;
+    text-align: center;
+}
+
+.lists_left ul,ol{
+    padding: 2em 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    font-size: large;
+}
+
+.lists_left li{
+    display: flex;
+    gap:1em;
+}
+
+.lists_left ol>li{
+    margin-bottom: 1em;
+}
+
+.lists_right dl{
+    color: var(--greenAlicante);
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
+    box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 10px;
+
+}
+
+.lists_right dl>dt{
+    font-size: 2.5em;
+    font-family:"Leckerli One";
+}
+
+.lists_right dl>dd{
+    text-align: start;
+}
+

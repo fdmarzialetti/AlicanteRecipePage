@@ -212,6 +212,8 @@ main{
     text-align: center;
 }
 
+/*LISTS LEFT*/
+
 .lists_left{
     width: 65%;
     color: gray;
@@ -225,6 +227,7 @@ main{
 .lists_left ul,ol{
     padding: 2em 3em;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 1em;
     font-size: large;
@@ -238,6 +241,8 @@ main{
 .lists_left ol>li{
     margin-bottom: 1em;
 }
+
+/*LISTS RIGHT*/
 
 .lists_right dl{
     color: var(--greenAlicante);
@@ -257,4 +262,103 @@ main{
 .lists_right dl>dd{
     text-align: start;
 }
+/*RELATED RECIPES*/
+.related_recipes_section{ 
+    padding: 3em 2em;     
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 2em;
+    color: var(--deepgreen);
+}
 
+.related_recipes_container{
+    display: flex;
+    justify-content: space-around;
+    gap: 4em;
+}
+
+.related_recipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15em;
+    text-align: center;
+    gap:1em;
+}
+
+.related_recipe:hover{
+    cursor:pointer;
+    transform: translate(0,-0.2em);
+    transition: 300ms;
+}
+
+.related_recipe h3{
+    color:var(--deepgreen);
+    
+}
+
+.related_recipe img{
+    width: 15em;
+    height: 15em;
+    object-fit: cover;
+    border-radius: 0 0 2em 2em;
+    box-shadow: rgba(0, 0, 0, 0.50) 1.95px 1.95px 2.6px;
+}
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--greenAlicante);
+    gap: 2em;
+    padding-top: 2em;
+    text-align: center;
+}
+
+footer img{
+    width: 12em;
+}
+
+.social_networks{
+    display: flex;
+    gap: 2em;
+}
+
+.social_networks i{
+    color: white;
+    font-size: 3em;
+}
+
+.social_networks i:hover{
+    color: rgb(196, 196, 196);
+    transition: 200ms;
+}
+
+.footer_nav ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 3em;
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer_nav a{
+    color: white;
+    font-size: large;
+}
+
+.footer_nav a:hover{
+    color: rgb(196, 196, 196);
+}
+
+footer p{
+    color: white;
+    background-color:#206d559a;
+    width: 100%;
+    padding: 1em;
+}

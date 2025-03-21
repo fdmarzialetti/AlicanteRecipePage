@@ -242,6 +242,14 @@ main{
     margin-bottom: 1em;
 }
 
+.lists_left ol{
+    list-style-position: inside;
+}
+
+.lists_left p{
+    line-height:1.5em;
+}
+
 /*LISTS RIGHT*/
 
 .lists_right dl{
@@ -357,7 +365,7 @@ footer img{
 }
 
 footer p{
-    color: white;
+    color: rgba(255, 255, 255, 0.527);
     background-color:#206d559a;
     width: 100%;
     padding: 1em;

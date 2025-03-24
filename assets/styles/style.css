@@ -115,7 +115,7 @@ a:hover{
 /*MAIN*/
 
 main{
-    background-image: url("/assets/images/scratched-beige-wooden-textured.jpg");
+    background-image: url("../images/scratched-beige-wooden-textured.jpg");
     display: flex;
     flex-direction: column;
     align-items: center;
